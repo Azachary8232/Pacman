@@ -3,7 +3,16 @@
     padding: 0px;
 }
 
-#row div{
+#world{
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+.row{
+    margin-bottom: -6px;
+}
+
+.row div{
     width: 20px;
     height: 20px;
     border: 1px solid black;

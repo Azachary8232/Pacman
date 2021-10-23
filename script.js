@@ -16,21 +16,20 @@ var world = [
     [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
     [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
     [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-        ];
+];
 
-function makeWorld(arr){
+function makeWorld(){
     var output = "";
-    for( var i=0; i<arr.length; i++){
-        output += "<div class='world'>";
-        for( var j=0; j<arr[i].length; j++){
-            if( arr[i][j] == 0){
-                output += "<div class='world'></div>";
+    for( var i=0; i<world.length; i++){
+        output += "<div class='row'>";
+        for( var j=0; j<world[i].length; j++){
+            if( world[i][j] == 0){
+                output += "<div class='block'></div>";
             }
         }
         output += "</div>";
     }
     console.log(output);
-    document.querySelector("#world").innerHTML = output;
+    document.getElementById("world").innerHTML = output;
 }        
-
-makeWorld(world);
+makeWorld();
